@@ -1,0 +1,213 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Màu sắc chính */
+:root {
+    --brown: #4E342E;
+    --light-brown: #6D4C41;
+    --beige: #EFEBE9;
+    --white: #FFFFFF;
+    --green: #388E3C;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: var(--brown);
+    color: var(--white);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: var(--green);
+    color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/Gemini_Generated_Image_y9r080y9r080y9r0.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: var(--light-brown);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--beige);
+}
+
+.about h2 {
+    color: var(--brown);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Quy trình sản xuất */
+.process {
+    text-align: center;
+    padding: 60px 10%;
+    background: var(--white);
+}
+
+.process h2 {
+    color: var(--brown);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 220px;
+    background: var(--beige);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.step img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 20px;
+    color: var(--brown);
+    margin-bottom: 5px;
+}
+
+.step p {
+    font-size: 14px;
+    color: #555;
+}
+
+.step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 60px 10%;
+    background: var(--beige);
+}
+
+.products h2 {
+    font-size: 32px;
+    color: var(--brown);
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 250px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    color: var(--brown);
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: var(--brown);
+    color: var(--white);
+    font-size: 18px;
+}
